@@ -22,7 +22,15 @@ def gitPush_Curr():
     pag.hotkey('enter')
     time.sleep(1)
 
+    pag.typewrite('git status', interval= 0.1)
+    pag.hotkey('enter')
+    time.sleep(1)
+
     pag.typewrite('git add -A', interval= 0.1)
+    pag.hotkey('enter')
+    time.sleep(1)
+
+    pag.typewrite('git status', interval= 0.1)
     pag.hotkey('enter')
     time.sleep(1)
 
@@ -34,8 +42,16 @@ def gitPush_Curr():
     pag.hotkey('enter')
     time.sleep(1)
 
+    pag.typewrite('git status', interval= 0.1)
+    pag.hotkey('enter')
+    time.sleep(1)
+
     pag.typewrite('git push', interval=0.1)
     pag.hotkey('enter')
+
+    pag.typewrite('git status', interval= 0.1)
+    pag.hotkey('enter')
+    time.sleep(1)
 
 gitPush_Curr()
 
